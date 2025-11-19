@@ -1,9 +1,10 @@
+import { useState } from "react";
 function App () {
   const[message, setMessage] = useState('Olá, mundo!');
   return(
     <div>
       <h1>{message}</h1>
-      <button onClick={()=>{setMessage('olá fui clicado');}}></button>
+      <button onClick={()=>{setMessage('olá fui clicado');}}>botão</button>
     </div>
   )
 }
